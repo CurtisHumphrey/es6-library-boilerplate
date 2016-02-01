@@ -3,7 +3,7 @@ var argv = require('yargs').argv;
 
 module.exports = function (config) {
   config.set({
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     coverageReporter: {
       reporters: [
         { type: 'html', subdir: 'html' },
@@ -11,6 +11,8 @@ module.exports = function (config) {
       ],
     },
     files: [
+      './node_modules/phantomjs-polyfill/bind-polyfill.js',
+      './node_modules/babel-polyfill/dist/polyfill.js',
       'tests.webpack.js',
     ],
     singleRun: !argv.watch,
