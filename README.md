@@ -7,13 +7,20 @@ _No Grunt/Gulp required!_
 
 Boilerplate for building a client-based JavaScript library in ES6 using the following components:
 
+Table of Contents
+-----------------
+1. [Configure Steps](#configure)
+1. [Features](#features)
+1. [Usage](#usage)
+
+
 Configure
 ---------
 
-# Change package.json main field to your library_name.js
-# Change package.json build scripts from Calculator to your library_name.js
-# Change webpack.config.base.js library field from calculator to your library_name
-# Make your library while `npm run test:dev` is executing
+1. Change package.json main field to your library_name.js
+2. Change package.json build scripts from Calculator to your library_name.js
+3. Change webpack.config.base.js library field from calculator to your library_name
+4. Make your library while `npm run test:dev` is executing
 
 Features
 --------

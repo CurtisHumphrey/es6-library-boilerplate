@@ -1,6 +1,6 @@
 {
   "name": "es6-library-boilerplate",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Boilerplate for ES6 client-based library. Uses Babel and webpack for transpiling and building, Karma and Mocha/Chai for unit testing, and Istanbul/Isparta for code coverage.",
   "main": "dist/calculator.js",
   "repository": {
