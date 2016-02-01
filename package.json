@@ -1,18 +1,18 @@
 {
-  "name": "es6-karma-jasmine-webpack-boilerplate",
-  "version": "0.2.0",
-  "description": "Boilerplate for ES6 client-based library. Uses Babel and webpack for transpiling and building, Karma and Jasmine for unit testing, and Istanbul/Isparta for code coverage.",
+  "name": "es6-library-boilerplate",
+  "version": "0.3.0",
+  "description": "Boilerplate for ES6 client-based library. Uses Babel and webpack for transpiling and building, Karma and Mocha/Chai for unit testing, and Istanbul/Isparta for code coverage.",
   "main": "dist/calculator.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zyml/es6-karma-jasmine-webpack-boilerplate"
+    "url": "https://github.com/CurtisHumphrey/es6-library-boilerplate"
   },
   "scripts": {
-    "build": "npm run clean && npm run build:dev && npm run build:prd",
+    "build": "npm run lint && npm run test && npm run clean && npm run build:dev && npm run build:prd",
     "build:dev": "webpack src/Calculator.js dist/calculator.js --config tools/webpack.config.dev.js",
     "build:prd": "webpack src/Calculator.js dist/calculator.min.js --config tools/webpack.config.prd.js",
     "prepublish": "npm run build",
-    "clean": "rimraf dist build",
+    "clean": "rimraf dist",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
     "test": "karma start karma.config.js",
@@ -29,7 +29,7 @@
     "istanbul",
     "boilerplate"
   ],
-  "author": "Melvin Lee (http://www.zy.sg/)",
+  "author": "Curtis M. Humphrey, PhD",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.4.0",
