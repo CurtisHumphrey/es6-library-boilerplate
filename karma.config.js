@@ -15,7 +15,10 @@ module.exports = function (config) {
     ],
     singleRun: !argv.watch,
     frameworks: [
-      'jasmine',
+      'mocha',
+      'chai-sinon',
+      'chai-as-promised',
+      'chai'
     ],
     preprocessors: {
       'tests.webpack.js': ['webpack', 'sourcemap'],
