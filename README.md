@@ -1,6 +1,7 @@
 # ES6 Karma Jasmine Webpack Boilerplate
 [![Build Status](https://travis-ci.org/CurtisHumphrey/es6-library-boilerplate.svg?branch=master)](https://travis-ci.org/CurtisHumphrey/es6-library-boilerplate)
-[![dependencies](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/CurtisHumphrey/es6-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CurtisHumphrey/es6-library-boilerplate?branch=master)
+[![Dependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate)
 [![devDependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate/dev-status.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate#info=devDependencies)
 
 _No Grunt/Gulp required!_
