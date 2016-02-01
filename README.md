@@ -11,8 +11,13 @@ Boilerplate for building a client-based JavaScript library in ES6 using the foll
 * [babel-istanbul](https://github.com/ambitioninc/babel-istanbul)
 * [ESLint](http://eslint.org/) with [eslint-config-airbnb](https://github.com/airbnb/javascript)
 
+Usage
+-----
+* `npm run test` - Runs unit tests with Karma and generates a coverage report
+* `npm run test:dev` - Runs Karma and watches for changes to re-run tests
+
+
 
 ## Credits
-* https://medium.com/@gunnarlium/es6-code-coverage-with-babel-jspm-karma-jasmine-and-istanbul-2c1918c5bb23
-* https://github.com/mvader/react-es6-webpack-karma-boilerplate
-* https://github.com/rackt/redux
+* https://github.com/zyml/es6-karma-jasmine-webpack-boilerplate
+* https://github.com/davezuko/react-redux-starter-kit

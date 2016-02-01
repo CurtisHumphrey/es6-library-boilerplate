@@ -1,4 +1,5 @@
 var path = require('path');
+var argv = require('yargs').argv;
 
 module.exports = function (config) {
   config.set({
@@ -6,19 +7,20 @@ module.exports = function (config) {
     coverageReporter: {
       reporters: [
         { type: 'html', subdir: 'html' },
-        { type: 'lcovonly', subdir: '.' },
+        { type : 'text-summary' },
       ],
     },
     files: [
       'tests.webpack.js',
     ],
+    singleRun: !argv.watch,
     frameworks: [
       'jasmine',
     ],
     preprocessors: {
       'tests.webpack.js': ['webpack', 'sourcemap'],
     },
-    reporters: ['progress', 'coverage'],
+    reporters: ['spec', 'coverage'],
     webpack: {
       cache: true,
       devtool: 'inline-source-map',
