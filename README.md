@@ -14,7 +14,8 @@ Boilerplate for building a client-based JavaScript library in ES6 using the foll
 Usage
 -----
 * `npm run test` - Runs unit tests with Karma and generates a coverage report
-* `npm run test:dev` - Runs Karma and watches for changes to re-run tests
+* `npm run test:dev` - Runs Karma and watches for changes to re-run tests also runs view-coverage
+* `npm run view-coverage` - Runs a watching server on the code coverage folder and opens it at port 3001
 
 
 

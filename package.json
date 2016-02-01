@@ -15,7 +15,8 @@
     "clean": "rimraf dist build",
     "lint": "eslint src",
     "test": "karma start karma.config.js",
-    "test:dev": "npm run test -- --watch"
+    "test:dev": "npm run test -- --watch & npm run view-coverage",
+    "view-coverage": "serveur -o -R coverage/html -p 3001"
   },
   "keywords": [
     "es6",
@@ -48,6 +49,7 @@
     "karma-webpack": "^1.7.0",
     "loader-utils": "^0.2.12",
     "rimraf": "^2.5.0",
+    "serveur": "^2.1.0",
     "webpack": "^1.12.11"
   }
 }
