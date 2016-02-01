@@ -1,4 +1,5 @@
 # ES6 Karma Jasmine Webpack Boilerplate
+[![Build Status](https://travis-ci.org/CurtisHumphrey/es6-library-boilerplate.svg?branch=master)](https://travis-ci.org/CurtisHumphrey/es6-library-boilerplate)
 
 _No Grunt/Gulp required!_
 
