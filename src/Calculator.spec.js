@@ -1,3 +1,4 @@
+/* eslint no-magic-numbers: 0 */ // simple math checks
 import Calculator from './Calculator';
 
 describe('Calculator', () => {

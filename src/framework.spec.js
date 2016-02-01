@@ -1,19 +1,19 @@
 import assert from 'assert';
 
-describe('(Framework) Karma Plugins', function () {
-  it('Should expose "expect" globally.', function () {
+describe('(Framework) Karma Plugins', () => {
+  it('Should expose "expect" globally.', () => {
     assert.ok(expect);
   });
 
-  it('Should expose "should" globally.', function () {
+  it('Should expose "should" globally.', () => {
     assert.ok(should);
   });
 
-  it('Should expose "sinon" globally.', function () {
+  it('Should expose "sinon" globally.', () => {
     assert.ok(sinon);
   });
 
-  it('Should have chai-as-promised helpers.', function () {
+  it('Should have chai-as-promised helpers.', () => {
     const pass = new Promise(res => res('test'));
     const fail = new Promise((res, rej) => rej());
 
