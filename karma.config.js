@@ -25,7 +25,7 @@ module.exports = function (config) {
     preprocessors: {
       'tests.webpack.js': ['webpack', 'sourcemap'],
     },
-    reporters: ['spec', 'coverage'],
+    reporters: ['spec', 'coverage','coveralls'],
     webpack: {
       cache: true,
       devtool: 'inline-source-map',

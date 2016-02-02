@@ -53,6 +53,7 @@
     "karma-chai-sinon": "^0.1.5",
     "karma-chrome-launcher": "^0.2.2",
     "karma-coverage": "^0.5.3",
+    "karma-coveralls": "^1.1.2",
     "karma-mocha": "^0.2.1",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sourcemap-loader": "^0.3.7",

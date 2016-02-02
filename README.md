@@ -22,6 +22,9 @@ Configure
 2. Change package.json build scripts from Calculator to your library_name.js
 3. Change webpack.config.base.js library field from calculator to your library_name
 4. Make your library while `npm run test:dev` is executing
+5. Setup Travis CI
+6. Setup Coveralls.io
+7. Add a environment variable to Travis CI called COVERALLS_REPO_TOKEN with your coveralls token
 
 Features
 --------
@@ -31,6 +34,7 @@ Features
   * Mocha w/ chai, sinon-chai, and chai-as-promised
   * PhantomJS and Chrome
   * Code coverage reports
+  * Uploading to coveralls (https://github.com/caitp/karma-coveralls)
 * [Babel](https://github.com/babel/babel) (`^6.3.0`)
   * [babel-plugin-transform-runtime](https://www.npmjs.com/package/babel-plugin-transform-runtime) so transforms aren't inlined
   * [babel-istanbul](https://github.com/ambitioninc/babel-istanbul)
