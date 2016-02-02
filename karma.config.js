@@ -1,14 +1,28 @@
 var path = require('path');
 var argv = require('yargs').argv;
 
+const coverage_reporters = [
+  { type: 'text-summary' },
+];
+const reporters = [
+ 'spec',
+ 'coverage',
+];
+if (process.env.COVERALLS_REPO_TOKEN) {
+  console.log('coveralls found');
+  coverage_reporters.push( { type : 'lcov', dir : 'coverage' } );
+  reporters.push('coveralls');
+} else {
+  console.log('coveralls NOT found');
+  coverage_reporters.push( { type : 'html', dir : 'coverage', 'subdir' : '.' } );
+}
+
+
 module.exports = function (config) {
   config.set({
     browsers: ['PhantomJS'],
     coverageReporter: {
-      reporters: [
-        { type: 'html', subdir: 'html' },
-        { type : 'text-summary' },
-      ],
+      reporters: coverage_reporters,
     },
     files: [
       './node_modules/phantomjs-polyfill/bind-polyfill.js',
@@ -25,7 +39,7 @@ module.exports = function (config) {
     preprocessors: {
       'tests.webpack.js': ['webpack', 'sourcemap'],
     },
-    reporters: ['spec', 'coverage','coveralls'],
+    reporters: reporters,
     webpack: {
       cache: true,
       devtool: 'inline-source-map',
