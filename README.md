@@ -1,12 +1,14 @@
 # ES6 Karma Jasmine Webpack Boilerplate
 [![Build Status](https://travis-ci.org/CurtisHumphrey/es6-library-boilerplate.svg?branch=master)](https://travis-ci.org/CurtisHumphrey/es6-library-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/CurtisHumphrey/es6-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CurtisHumphrey/es6-library-boilerplate?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/CurtisHumphrey/es6-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CurtisHumphrey/es6-library-boilerplate?branch=master) _should be red because example is purposely not fully covered_
 [![Dependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate)
 [![devDependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate/dev-status.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate#info=devDependencies)
 
+
+
 _No Grunt/Gulp required!_
 
-Boilerplate for building a client-based JavaScript library in ES6 using the following components:
+Boilerplate for building a client-based JavaScript library in ES6 using the following features
 
 Table of Contents
 -----------------
@@ -24,7 +26,7 @@ Configure
 4. Make your library while `npm run test:dev` is executing
 5. Setup Travis CI
 6. Setup Coveralls.io
-7. Add a environment variable to Travis CI called COVERALLS_REPO_TOKEN with your coveralls token
+7. Push code to github to share (should trigger Travis and then coveralls)
 
 Features
 --------
