@@ -8,12 +8,12 @@ const reporters = [
  'spec',
  'coverage',
 ];
-if (process.env.COVERALLS_REPO_TOKEN) {
-  console.log('coveralls found');
+if (process.env.TRAVIS) {
+  console.log('On Travis sending coveralls');
   coverage_reporters.push( { type : 'lcov', dir : 'coverage' } );
   reporters.push('coveralls');
 } else {
-  console.log('coveralls NOT found');
+  console.log('Not on Travis so not sending coveralls');
   coverage_reporters.push( { type : 'html', dir : 'coverage', 'subdir' : '.' } );
 }
 
