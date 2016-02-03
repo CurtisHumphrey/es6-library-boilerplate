@@ -4,8 +4,6 @@
 [![Dependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate)
 [![devDependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate/dev-status.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate#info=devDependencies)
 
-
-
 _No Grunt/Gulp required!_
 
 Boilerplate for building a client-based JavaScript library in ES6 using the following features
@@ -26,11 +24,7 @@ Configure
 4. Make your library while `npm run test:dev` is executing
 5. Setup Travis CI
 6. Setup Coveralls.io
-<<<<<<< HEAD
-7. Upload to github to share!
-=======
-7. Push code to github to share (should trigger Travis and then coveralls)
->>>>>>> origin-curtis/master
+7. Push code to github to share (should trigger Travis and then Coveralls)
 
 Features
 --------
