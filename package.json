@@ -1,6 +1,10 @@
 {
   "name": "es6-library-boilerplate",
+<<<<<<< HEAD
   "version": "0.3.4",
+=======
+  "version": "0.3.3",
+>>>>>>> origin-curtis/master
   "description": "Boilerplate for ES6 client-based library. Uses Babel and webpack for transpiling and building, Karma and Mocha/Chai for unit testing, and Istanbul/Isparta for code coverage.",
   "main": "dist/calculator.js",
   "repository": {
