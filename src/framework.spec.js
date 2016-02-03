@@ -1,4 +1,5 @@
 import assert from 'assert';
+import calc from './Calculator';
 
 describe('(Framework) Karma Plugins', () => {
   it('Should expose "expect" globally.', () => {
@@ -11,6 +12,10 @@ describe('(Framework) Karma Plugins', () => {
 
   it('Should expose "sinon" globally.', () => {
     assert.ok(sinon);
+  });
+
+  it('Should expose a "__Rewire__" function on every import', () => {
+    assert.ok(calc.__Rewire__);
   });
 
   it('Should have chai-as-promised helpers.', () => {

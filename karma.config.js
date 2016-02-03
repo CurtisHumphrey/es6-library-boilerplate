@@ -1,5 +1,6 @@
 var path = require('path');
 var argv = require('yargs').argv;
+process.env.BABEL_ENV = 'karma';
 
 const coverage_reporters = [
   { type: 'text-summary' },
@@ -43,6 +44,7 @@ module.exports = function (config) {
     webpack: {
       cache: true,
       devtool: 'inline-source-map',
+      debug: true,
       module: {
         preLoaders: [
           {

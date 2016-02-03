@@ -24,7 +24,7 @@ Configure
 4. Make your library while `npm run test:dev` is executing
 5. Setup Travis CI
 6. Setup Coveralls.io
-7. Add a environment variable to Travis CI called COVERALLS_REPO_TOKEN with your coveralls token
+7. Upload to github to share!
 
 Features
 --------
@@ -32,6 +32,7 @@ Features
 * [Webpack](https://github.com/webpack/webpack)
 * [Karma](https://github.com/karma-runner/karma)
   * Mocha w/ chai, sinon-chai, and chai-as-promised
+  * [Rewire enabled](https://github.com/speedskater/babel-plugin-rewire)
   * PhantomJS and Chrome
   * Code coverage reports
   * Uploading to coveralls (https://github.com/caitp/karma-coveralls)
@@ -39,7 +40,7 @@ Features
   * [babel-plugin-transform-runtime](https://www.npmjs.com/package/babel-plugin-transform-runtime) so transforms aren't inlined
   * [babel-istanbul](https://github.com/ambitioninc/babel-istanbul)
 * [ESLint](http://eslint.org)
-  * Uses [Standard Style](https://github.com/feross/standard) by default, but you're welcome to change this!
+  * Uses airbnb/base plus some additional good rules
 
 Usage
 -----
