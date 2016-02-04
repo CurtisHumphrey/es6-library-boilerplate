@@ -79,6 +79,20 @@ module.exports = function (config) {
         testName: 'es6 library boilerplate'
     },
     customeLaunchers: sauceLunchers,
+    plugins: [
+      'karma-chai',
+      'karma-chai-as-promised',
+      'karma-chai-sinon',
+      'karma-chrome-launcher',
+      'karma-coverage',
+      'karma-coveralls',
+      'karma-mocha',
+      'karma-phantomjs-launcher',
+      'karma-sauce-launcher',
+      'karma-sourcemap-loader',
+      'karma-spec-reporter',
+      'karma-webpack',
+    ],
     webpack: {
       cache: true,
       devtool: 'inline-source-map',
