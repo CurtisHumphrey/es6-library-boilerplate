@@ -9,6 +9,33 @@ const reporters = [
  'spec',
  'coverage',
 ];
+var browsers = ['PhantomJS']; // for local builds
+var sauceLunchers = {
+    sl_chrome: {
+      base: 'SauceLabs',
+      browserName: 'chrome',
+      platform: 'Windows 7',
+      version: '35'
+    },
+    sl_firefox: {
+      base: 'SauceLabs',
+      browserName: 'firefox',
+      version: '30'
+    },
+    sl_ios_safari: {
+      base: 'SauceLabs',
+      browserName: 'iphone',
+      platform: 'OS X 10.9',
+      version: '7.1'
+    },
+    sl_ie_11: {
+      base: 'SauceLabs',
+      browserName: 'internet explorer',
+      platform: 'Windows 8.1',
+      version: '11'
+    }
+  }
+
 if (process.env.TRAVIS) {
   console.log('On Travis sending coveralls');
   coverage_reporters.push( { type : 'lcov', dir : 'coverage' } );
@@ -17,11 +44,18 @@ if (process.env.TRAVIS) {
   console.log('Not on Travis so not sending coveralls');
   coverage_reporters.push( { type : 'html', dir : 'coverage', 'subdir' : '.' } );
 }
+if (process.env.SAUCE_USERNAME) {
+  console.log('Will use sauceLabs');
+  reporters.push('saucelabs');
+  browsers = Object.keys(sauceLunchers);
+} else {
+  console.log('No sauceLabs')
+}
 
 
 module.exports = function (config) {
   config.set({
-    browsers: ['PhantomJS'],
+    browsers: browsers,
     coverageReporter: {
       reporters: coverage_reporters,
     },
@@ -41,6 +75,10 @@ module.exports = function (config) {
       'tests.webpack.js': ['webpack', 'sourcemap'],
     },
     reporters: reporters,
+    sauceLabs: {
+        testName: 'es6 library boilerplate'
+    },
+    customeLaunchers: sauceLunchers,
     webpack: {
       cache: true,
       devtool: 'inline-source-map',

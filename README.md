@@ -24,7 +24,10 @@ Configure
 4. Make your library while `npm run test:dev` is executing
 5. Setup Travis CI
 6. Setup Coveralls.io
-7. Push code to github to share (should trigger Travis and then Coveralls)
+7. Setup saucelabs
+8. Added the `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` enviroment variables to Travis CI
+9. Update sauceLunchers in karma.config.js as needed
+10. Push code to github to share (should trigger Travis, sauceLabs, and Coveralls)
 
 Features
 --------

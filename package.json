@@ -28,6 +28,7 @@
     "mocha",
     "chai",
     "karma",
+    "rewire",
     "istanbul",
     "boilerplate"
   ],
@@ -58,6 +59,7 @@
     "karma-coveralls": "^1.1.2",
     "karma-mocha": "^0.2.1",
     "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^0.3.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.23",
     "karma-webpack": "^1.7.0",
