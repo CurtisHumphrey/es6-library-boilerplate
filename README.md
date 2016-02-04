@@ -3,6 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/CurtisHumphrey/es6-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CurtisHumphrey/es6-library-boilerplate?branch=master) _should be red because example is purposely not fully covered_
 [![Dependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate)
 [![devDependency Status](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate/dev-status.svg)](https://david-dm.org/CurtisHumphrey/es6-library-boilerplate#info=devDependencies)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/humphrey816.svg)](https://saucelabs.com/u/humphrey816)
 
 _No Grunt/Gulp required!_
 
