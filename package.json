@@ -29,6 +29,9 @@
     "chai",
     "karma",
     "rewire",
+    "travis",
+    "coveralls",
+    "david-dm",
     "istanbul",
     "boilerplate"
   ],
