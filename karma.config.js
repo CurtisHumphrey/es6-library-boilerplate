@@ -66,7 +66,7 @@ module.exports = function (config) {
     sauceLabs: {
         testName: 'es6 library boilerplate'
     },
-    customeLaunchers: sauceLunchers,
+    customLaunchers: sauceLunchers,
     plugins: [
       'karma-chai',
       'karma-chai-as-promised',
