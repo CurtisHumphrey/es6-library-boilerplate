@@ -1,6 +1,6 @@
 {
   "name": "es6-library-boilerplate",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Boilerplate for ES6 client-based library. Uses Babel and webpack for transpiling and building, Karma and Mocha/Chai for unit testing, and Istanbul/Isparta for code coverage.",
   "main": "dist/calculator.js",
   "repository": {
@@ -32,8 +32,9 @@
     "travis",
     "coveralls",
     "david-dm",
+    "saucelabs",
     "istanbul",
-    "boilerplate"
+    "boilerplate",
   ],
   "author": "Curtis M. Humphrey, PhD",
   "license": "MIT",
@@ -52,7 +53,7 @@
     "chai-as-promised": "^5.2.0",
     "escope": "^3.3.0",
     "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^4.0.0",
+    "eslint-config-airbnb": "^5.0.0",
     "karma": "^0.13.19",
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
