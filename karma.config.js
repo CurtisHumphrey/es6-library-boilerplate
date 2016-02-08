@@ -10,19 +10,8 @@ const reporters = [
  'coverage',
 ];
 var browsers = ['PhantomJS']; // for local builds
-var sauceLaunchers = {
-    SL_Chrome: {
-      base: 'SauceLabs',
-      browserName: 'chrome',
-      platform: 'Windows 7',
-      version: '35'
-    },
-    SL_FireFox: {
-      base: 'SauceLabs',
-      browserName: 'firefox',
-      version: '30'
-    },
-  }
+var sauceLaunchers = require('./tools/browsers_to_saucelabs')(require('./saucelab_browsers'));
+
 
 if (process.env.TRAVIS) {
   console.log('On Travis sending coveralls');
