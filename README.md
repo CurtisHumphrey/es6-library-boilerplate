@@ -27,7 +27,7 @@ Configure
 6. Setup Coveralls.io
 7. Setup saucelabs
 8. Added the `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` enviroment variables to Travis CI
-9. Update sauceLunchers in karma.config.js as needed
+9. Update sauceLaunchers in saucelab_browsers.js
 10. Push code to github to share (should trigger Travis, sauceLabs, and Coveralls)
 
 Features
@@ -63,3 +63,4 @@ Usage
 ## Credits
 * https://github.com/zyml/es6-karma-jasmine-webpack-boilerplate
 * https://github.com/davezuko/react-redux-starter-kit
+* https://gist.github.com/riggerthegeek/8e28e9fea81835fad6bf#file-saucelabs_browsers-js

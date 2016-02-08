@@ -10,7 +10,7 @@ const reporters = [
  'coverage',
 ];
 var browsers = ['PhantomJS']; // for local builds
-var sauceLunchers = {
+var sauceLaunchers = {
     SL_Chrome: {
       base: 'SauceLabs',
       browserName: 'chrome',
@@ -35,7 +35,7 @@ if (process.env.TRAVIS) {
 if (process.env.SAUCE_USERNAME) {
   console.log('Will use sauceLabs');
   reporters.push('saucelabs');
-  browsers = Object.keys(sauceLunchers);
+  browsers = Object.keys(sauceLaunchers);
 } else {
   console.log('No sauceLabs')
 }
@@ -66,7 +66,7 @@ module.exports = function (config) {
     sauceLabs: {
         testName: 'es6 library boilerplate'
     },
-    customLaunchers: sauceLunchers,
+    customLaunchers: sauceLaunchers,
     plugins: [
       'karma-chai',
       'karma-chai-as-promised',
