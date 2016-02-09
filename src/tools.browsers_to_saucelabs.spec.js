@@ -1,3 +1,4 @@
+/* eslint no-unused-expressions: 0 */ // needed for expects
 import browsers_to_saucelabs from '../tools/browsers_to_saucelabs';
 
 describe('browsers_to_saucelabs', () => {
