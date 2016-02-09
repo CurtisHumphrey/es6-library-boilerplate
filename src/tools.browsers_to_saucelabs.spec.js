@@ -35,6 +35,22 @@ describe('browsers_to_saucelabs', () => {
       expect(launchers[first].browserName).to.eql('firefox');
     });
   });
+  describe('given browser entries with a version "current"', () => {
+    beforeEach(() => {
+      browsers = {
+        firefox: [
+          'current',
+        ],
+      };
+      launchers = browsers_to_saucelabs(browsers);
+    });
+
+    it('should return an object without a version key', () => {
+      const first = Object.keys(launchers)[0];
+
+      expect(launchers[first].version).to.not.exist;
+    });
+  });
 
   it('given a browser entry with platforms it should generate objects with platform keys', () => {
     browsers = {

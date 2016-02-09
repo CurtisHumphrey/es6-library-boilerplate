@@ -32,7 +32,7 @@ function browsers_to_saucelabs(browsers) {
         launchers[name] = {
           base: 'SauceLabs',
           browserName: browserName,
-          version: version,
+          version: version === 'current' ? undefined : version,
           platform: plat || null,
         };
       });
