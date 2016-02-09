@@ -12,7 +12,6 @@ const reporters = [
 var browsers = ['PhantomJS']; // for local builds
 var sauceLaunchers = require('./tools/browsers_to_saucelabs')(require('./saucelab_browsers'));
 
-
 if (process.env.TRAVIS) {
   console.log('On Travis sending coveralls');
   coverage_reporters.push( { type : 'lcov', dir : 'coverage' } );

@@ -1,3 +1,4 @@
+/* eslint no-unused-expressions: 0 */ // needed for expects
 import browsers_to_saucelabs from '../tools/browsers_to_saucelabs';
 
 describe('browsers_to_saucelabs', () => {
@@ -33,6 +34,22 @@ describe('browsers_to_saucelabs', () => {
 
       expect(launchers[first]).to.include.keys('browserName');
       expect(launchers[first].browserName).to.eql('firefox');
+    });
+  });
+  describe('given browser entries with a version "current"', () => {
+    beforeEach(() => {
+      browsers = {
+        firefox: [
+          'current',
+        ],
+      };
+      launchers = browsers_to_saucelabs(browsers);
+    });
+
+    it('should return an object without a version key', () => {
+      const first = Object.keys(launchers)[0];
+
+      expect(launchers[first].version).to.not.exist;
     });
   });
 
