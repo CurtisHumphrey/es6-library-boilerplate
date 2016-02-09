@@ -10,7 +10,7 @@
  * https://wiki.saucelabs.com/display/DOCS/Platform+Configurator
  */
 
-module.export = {
+module.exports = {
   chrome: [
     'current',
   ],
