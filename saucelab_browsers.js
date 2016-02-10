@@ -27,7 +27,4 @@ module.exports = {
     'current',
     '8.0',
   ],
-  iphone: [
-    'current',
-  ],
 };
