@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb/base",
+  "extends": "standard",
   "env"     : {
     "browser" : true,
     "mocha" : true
@@ -41,6 +41,6 @@
     "no-extend-native": 2,
     "no-native-reassign": 2,
     "no-loop-func": 2,
-    "no-magic-numbers": 2,
+    "no-magic-numbers": [2, {ignore: [0, 1]}]
   }
 }
