@@ -15,9 +15,16 @@ module.exports = {
     'current',
   ],
   firefox: [
-    'dev',
-    'beta',
     'current',
-    '3.6',
+  ],
+  MicrosoftEdge: [
+    'current',
+  ],
+  'internet explorer': [
+    'current',
+  ],
+  safari: [
+    'current',
+    '8.0',
   ],
 };
