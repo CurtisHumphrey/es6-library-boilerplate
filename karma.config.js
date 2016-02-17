@@ -6,8 +6,8 @@ const coverage_reporters = [
   { type: 'text-summary' },
 ];
 const reporters = [
- 'spec',
- 'coverage',
+  'spec',
+  'coverage',
 ];
 var browsers = ['PhantomJS']; // for local builds
 var sauceLaunchers = require('./tools/browsers_to_saucelabs')(require('./saucelab_browsers'));
@@ -25,7 +25,7 @@ if (process.env.SAUCE_USERNAME) {
   reporters.push('saucelabs');
   browsers = Object.keys(sauceLaunchers);
 } else {
-  console.log('No sauceLabs')
+  console.log('No sauceLabs');
 }
 
 
@@ -45,7 +45,7 @@ module.exports = function (config) {
       'mocha',
       'chai-sinon',
       'chai-as-promised',
-      'chai'
+      'chai',
     ],
     preprocessors: {
       'tests.webpack.js': ['webpack', 'sourcemap'],
